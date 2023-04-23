@@ -1,1 +1,1 @@
-require("nad.options")
+require("nad")
