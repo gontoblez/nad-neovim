@@ -48,7 +48,7 @@ return require('packer').startup(function(use)
         -- or                            , branch = '0.1.x',
         requires = { {'nvim-lua/plenary.nvim'} }
     }
-    use("morhetz/gruvbox")                      -- gruvbox colorscheme
+    use "vim-scripts/gruvbox"                   -- gruvbox colorscheme
     use("ThePrimeagen/harpoon")                 -- harpoon
     --treesitter
     use('nvim-treesitter/nvim-treesitter',

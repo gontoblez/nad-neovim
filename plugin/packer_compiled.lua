@@ -117,7 +117,7 @@ _G.packer_plugins = {
   gruvbox = {
     loaded = true,
     path = "/home/dafoor/.local/share/nvim/site/pack/packer/start/gruvbox",
-    url = "https://github.com/morhetz/gruvbox"
+    url = "https://github.com/vim-scripts/gruvbox"
   },
   harpoon = {
     loaded = true,
