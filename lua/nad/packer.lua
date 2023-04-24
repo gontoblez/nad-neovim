@@ -15,10 +15,10 @@ end
 
 -- Automatically reload neovim when saving packer.lua file
 vim.cmd [[
-    augroup packer_user_config
-        autocmd!
-        autocmd BufWritePost packer.lua source <afile> | PackerSync
-    augroup end
+augroup packer_user_config
+autocmd!
+autocmd BufWritePost packer.lua source <afile> | PackerSync
+augroup end
 ]]
 
 -- Use a protected call so nvim doesn't scream on first use
@@ -60,9 +60,37 @@ return require('packer').startup(function(use)
     })
     use 'mbbill/undotree'
     use 'tpope/vim-fugitive'
+    -- LSP
+    use {
+        'VonHeikemen/lsp-zero.nvim',
+        branch = 'v1.x',
+        requires = {
+            -- LSP Support
+            {'neovim/nvim-lspconfig'},             -- Required
+            {                                      -- Optional
+            'williamboman/mason.nvim',
+            run = function()
+                pcall(vim.cmd, 'MasonUpdate')
+            end,
+        },
+        {'williamboman/mason-lspconfig.nvim'}, -- Optional
 
-    --- Automatically load config after cloning packer.nvim
-    if PACKER_BOOTSTRAP then
-        require("packer").sync()
-    end
+        -- Autocompletion
+        {'hrsh7th/nvim-cmp'},         -- Required
+        {'hrsh7th/cmp-buffer'},       -- Optional
+        {'hrsh7th/cmp-path'},         -- Optional
+        {'hrsh7th/cmp-cmdline'},      -- Optional
+        {'hrsh7th/cmp-nvim-lsp'},     -- Required
+        {'hrsh7th/cmp-nvim-lua'},     -- Optional
+        {'saadparwaiz1/cmp_luasnip'}, -- Optional
+
+        -- Snippets
+        {'L3MON4D3/LuaSnip'},             -- Required
+        {'rafamadriz/friendly-snippets'}, -- Optional
+    }
+}
+--- Automatically load config after cloning packer.nvim
+if PACKER_BOOTSTRAP then
+    require("packer").sync()
+end
 end)
