@@ -4,6 +4,7 @@
 vim.cmd.syntax("on")
 vim.cmd.nohl()
 vim.cmd [[set iskeyword+=-]]        -- treats shaker-shawaker as one word
+vim.cmd.colorscheme("gruvbox")      -- gruvbox colorscheme
 
 -- vim.opt = vim option
 vim.opt.number = true               -- numbered lines
