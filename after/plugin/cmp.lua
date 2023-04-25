@@ -120,6 +120,6 @@ window = {
 },
 experimental = {
     ghost_text = true,
-    native_menu = false,
+    native_menu = true,
 },
 }
