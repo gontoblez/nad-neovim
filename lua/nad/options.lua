@@ -4,6 +4,8 @@
 vim.cmd.syntax("on")
 vim.cmd.nohl()
 vim.cmd [[set iskeyword+=-]]        -- treats shaker-shawaker as one word
+vim.cmd [[set encoding=UTF-8]]
+vim.cmd [[set fileencoding=utf-8]]
 -- vim.cmd.colorscheme("gruvbox")      -- gruvbox colorscheme
 
 -- vim.opt = vim option
@@ -17,10 +19,12 @@ vim.opt.termguicolors = true        -- set termguicolors original terminal color
 vim.opt.expandtab = true            -- turns <tab> into <space>s
 vim.opt.splitbelow = true           -- splits below the original window (?)
 vim.opt.splitright = true           -- splits to the right of the original window (?)
+vim.opt.ruler = true
 vim.opt.smartcase = true            -- smartcase
 vim.opt.swapfile = false            -- no swap
 vim.opt.wrap = false                -- set nowrap
 vim.opt.backup = false              -- set nobackup
+vim.opt.writebackup = false              -- set nobackup
 vim.opt.hlsearch = false            -- set nohlsearch
 vim.opt.cmdheight = 2               -- height of the bar below
 --vim.opt.showtabline = 3             -- always show tabs
