@@ -6,7 +6,6 @@ vim.g.mapleader = " "           -- set mod key to <SPACE>
 --
 -- NORMAL MODE REMAPS
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)           -- netrw with <ldr>pv
-vim.keymap.set("n", "<leader>e", ":Lex 30<cr>")         -- netrw in left pane (change soon)
 
 -- Navigate windows
 vim.keymap.set("n", "<C-h>", "<C-w>h")
