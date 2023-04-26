@@ -9,7 +9,6 @@ lsp.ensure_installed({
   'markdown-toc',
   'latexindent',
   'texlab',
-  'bash-debug-adapter',
   'cssls',
   'html',
   'pyright'
