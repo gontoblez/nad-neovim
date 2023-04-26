@@ -55,7 +55,7 @@ return require('packer').startup(function(use)
     use 'vim-airline/vim-airline-themes'
     --treesitter
     use('nvim-treesitter/nvim-treesitter',
-    {run = ':TSUpdate'})
+        {run = ':TSUpdate'})
     -- auotpairs
     use("windwp/nvim-autopairs")
     -- commenting
@@ -86,29 +86,29 @@ return require('packer').startup(function(use)
             -- LSP Support
             {'neovim/nvim-lspconfig'},             -- Required
             {                                      -- Optional
-            'williamboman/mason.nvim',
-            run = function()
-                pcall(vim.cmd, 'MasonUpdate')
-            end,
-        },
-        {'williamboman/mason-lspconfig.nvim'}, -- Optional
+                'williamboman/mason.nvim',
+                run = function()
+                    pcall(vim.cmd, 'MasonUpdate')
+                end,
+            },
+            {'williamboman/mason-lspconfig.nvim'}, -- Optional
 
-        -- Autocompletion
-        {'hrsh7th/nvim-cmp'},         -- Required
-        {'hrsh7th/cmp-buffer'},       -- Optional
-        {'hrsh7th/cmp-path'},         -- Optional
-        {'hrsh7th/cmp-cmdline'},      -- Optional
-        {'hrsh7th/cmp-nvim-lsp'},     -- Required
-        {'hrsh7th/cmp-nvim-lua'},     -- Optional
-        {'saadparwaiz1/cmp_luasnip'}, -- Optional
+            -- Autocompletion
+            {'hrsh7th/nvim-cmp'},         -- Required
+            {'hrsh7th/cmp-buffer'},       -- Optional
+            {'hrsh7th/cmp-path'},         -- Optional
+            {'hrsh7th/cmp-cmdline'},      -- Optional
+            {'hrsh7th/cmp-nvim-lsp'},     -- Required
+            {'hrsh7th/cmp-nvim-lua'},     -- Optional
+            {'saadparwaiz1/cmp_luasnip'}, -- Optional
 
-        -- Snippets
-        {'L3MON4D3/LuaSnip'},             -- Required
-        {'rafamadriz/friendly-snippets'}, -- Optional
+            -- Snippets
+            {'L3MON4D3/LuaSnip'},             -- Required
+            {'rafamadriz/friendly-snippets'}, -- Optional
+        }
     }
-}
---- Automatically load config after cloning packer.nvim
-if PACKER_BOOTSTRAP then
-    require("packer").sync()
-end
+    --- Automatically load config after cloning packer.nvim
+    if PACKER_BOOTSTRAP then
+        require("packer").sync()
+    end
 end)
