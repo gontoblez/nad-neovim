@@ -3,8 +3,16 @@ local lsp = require("lsp-zero")
 lsp.preset("recommended")
 
 lsp.ensure_installed({
-  'tsserver',
-  'rust_analyzer',
+  'lua_ls',
+  'bashls',
+  'ltex',
+  'markdown-toc',
+  'latexindent',
+  'texlab',
+  'bash-debug-adapter',
+  'cssls',
+  'html',
+  'pyright'
 })
 
 lsp.nvim_workspace()
@@ -18,9 +26,10 @@ local cmp_mappings = lsp.defaults.cmp_mappings({
   ['<C-y>'] = cmp.mapping.confirm({ select = true }),
   ["<C-Space>"] = cmp.mapping.complete(),
 })
-
+--[[
 cmp_mappings['<Tab>'] = nil
 cmp_mappings['<S-Tab>'] = nil
+]]
 
 lsp.setup_nvim_cmp({
   mapping = cmp_mappings
