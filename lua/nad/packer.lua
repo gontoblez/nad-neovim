@@ -63,6 +63,7 @@ return require('packer').startup(function(use)
     use("JoosepAlviste/nvim-ts-context-commentstring")
     -- nvim tree
     use("nvim-tree/nvim-tree.lua")
+    use("nvim-tree/nvim-web-devicons")
     -- Gitsigns
     use("lewis6991/gitsigns.nvim")
     -- LaTeX Support
