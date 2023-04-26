@@ -61,6 +61,8 @@ return require('packer').startup(function(use)
     -- commenting
     use("numToStr/Comment.nvim")
     use("JoosepAlviste/nvim-ts-context-commentstring")
+    -- nvim tree
+    use("nvim-tree/nvim-tree.lua")
     -- Gitsigns
     use("lewis6991/gitsigns.nvim")
     -- LaTeX Support
