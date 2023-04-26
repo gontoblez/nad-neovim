@@ -56,6 +56,8 @@ return require('packer').startup(function(use)
     --treesitter
     use('nvim-treesitter/nvim-treesitter',
     {run = ':TSUpdate'})
+    -- auotpairs
+    use("windwp/nvim-autopairs")
     -- LaTeX Support
     use 'lervag/vimtex'
     -- markdown
