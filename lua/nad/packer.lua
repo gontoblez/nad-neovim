@@ -62,6 +62,8 @@ return require('packer').startup(function(use)
     use 'lervag/vimtex'
     -- markdown
     use 'gabrielelana/vim-markdown'
+    -- rainbow parenthesis
+    use("HiPhish/nvim-ts-rainbow2")
     -- markdown preview
     use({
         "iamcco/markdown-preview.nvim",
