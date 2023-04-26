@@ -49,6 +49,7 @@ return require('packer').startup(function(use)
         requires = { {'nvim-lua/plenary.nvim'} }
     }
     use "vim-scripts/gruvbox"                   -- gruvbox colorscheme
+    use("luisiacc/gruvbox-baby")                         -- supposedly better gruvbox
     use("ThePrimeagen/harpoon")                 -- harpoon
     use 'vim-airline/vim-airline'
     use 'vim-airline/vim-airline-themes'

@@ -119,6 +119,11 @@ _G.packer_plugins = {
     path = "/home/dafoor/.local/share/nvim/site/pack/packer/start/gruvbox",
     url = "https://github.com/vim-scripts/gruvbox"
   },
+  ["gruvbox-baby"] = {
+    loaded = true,
+    path = "/home/dafoor/.local/share/nvim/site/pack/packer/start/gruvbox-baby",
+    url = "https://github.com/luisiacc/gruvbox-baby"
+  },
   harpoon = {
     loaded = true,
     path = "/home/dafoor/.local/share/nvim/site/pack/packer/start/harpoon",
