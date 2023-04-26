@@ -41,5 +41,10 @@ require'nvim-treesitter.configs'.setup {
         query = 'rainbow-parens',
         -- Highlight the entire buffer all at once
         strategy = require('ts-rainbow').strategy.global,
-    }
+    },
+--[[    context_commentstring {
+        enable = true,
+        enable_autocmd = false,
+    },
+    ]]
 }

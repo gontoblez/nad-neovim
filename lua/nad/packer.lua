@@ -58,6 +58,9 @@ return require('packer').startup(function(use)
     {run = ':TSUpdate'})
     -- auotpairs
     use("windwp/nvim-autopairs")
+    -- commenting
+    use("numToStr/Comment.nvim")
+    use("JoosepAlviste/nvim-ts-context-commentstring")
     -- LaTeX Support
     use 'lervag/vimtex'
     -- markdown
