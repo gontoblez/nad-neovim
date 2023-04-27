@@ -39,18 +39,18 @@ packer.init {
 
 -- Plugins here
 return require('packer').startup(function(use)
-    use 'wbthomason/packer.nvim'                -- Packer can manage itself
-    use "nvim-lua/popup.nvim"                   -- popup API
-    use "nvim-lua/plenary.nvim"                 -- plenary
+    use 'wbthomason/packer.nvim'                    -- Packer can manage itself
+    use "nvim-lua/popup.nvim"                       -- popup API
+    use "nvim-lua/plenary.nvim"                     -- plenary
     -- telescope
     use {
         'nvim-telescope/telescope.nvim', tag = '0.1.1',
         -- or                            , branch = '0.1.x',
         requires = { {'nvim-lua/plenary.nvim'} }
     }
-    use "vim-scripts/gruvbox"                   -- gruvbox colorscheme
-    use("luisiacc/gruvbox-baby")                         -- supposedly better gruvbox
-    use("ThePrimeagen/harpoon")                 -- harpoon
+    use "vim-scripts/gruvbox"                       -- gruvbox colorscheme
+    use("luisiacc/gruvbox-baby")                    -- supposedly better gruvbox
+    use("ThePrimeagen/harpoon")                     -- harpoon
     use 'vim-airline/vim-airline'
     use 'vim-airline/vim-airline-themes'
     --treesitter
@@ -83,29 +83,30 @@ return require('packer').startup(function(use)
         branch = 'v1.x',
         requires = {
             -- LSP Support
-            {'neovim/nvim-lspconfig'},             -- Required
-            {                                      -- Optional
+            {'neovim/nvim-lspconfig'},              -- Required
+            {                                       -- Optional
                 'williamboman/mason.nvim',
                 run = function()
                     pcall(vim.cmd, 'MasonUpdate')
                 end,
             },
-            {'williamboman/mason-lspconfig.nvim'}, -- Optional
+            {'williamboman/mason-lspconfig.nvim'},  -- Optional
 
             -- Autocompletion
-            {'hrsh7th/nvim-cmp'},         -- Required
-            {'hrsh7th/cmp-buffer'},       -- Optional
-            {'hrsh7th/cmp-path'},         -- Optional
-            {'hrsh7th/cmp-cmdline'},      -- Optional
-            {'hrsh7th/cmp-nvim-lsp'},     -- Required
-            {'hrsh7th/cmp-nvim-lua'},     -- Optional
-            {'saadparwaiz1/cmp_luasnip'}, -- Optional
+            {'hrsh7th/nvim-cmp'},                   -- Required
+            {'hrsh7th/cmp-buffer'},                 -- Optional
+            {'hrsh7th/cmp-path'},                   -- Optional
+            {'hrsh7th/cmp-cmdline'},                -- Optional
+            {'hrsh7th/cmp-nvim-lsp'},               -- Required
+            {'hrsh7th/cmp-nvim-lua'},               -- Optional
+            {'saadparwaiz1/cmp_luasnip'},           -- Optional
 
             -- Snippets
-            {'L3MON4D3/LuaSnip'},             -- Required
-            {'rafamadriz/friendly-snippets'}, -- Optional
+            {'L3MON4D3/LuaSnip'},                   -- Required
+            {'rafamadriz/friendly-snippets'},       -- Optional
         }
     }
+    use("jose-elias-alvarez/null-ls.nvim")          -- for formatters and linters
     --- Automatically load config after cloning packer.nvim
     if PACKER_BOOTSTRAP then
         require("packer").sync()
