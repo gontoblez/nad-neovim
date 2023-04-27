@@ -224,16 +224,6 @@ _G.packer_plugins = {
     path = "/home/dafoor/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
   },
-  ["vim-airline"] = {
-    loaded = true,
-    path = "/home/dafoor/.local/share/nvim/site/pack/packer/start/vim-airline",
-    url = "https://github.com/vim-airline/vim-airline"
-  },
-  ["vim-airline-themes"] = {
-    loaded = true,
-    path = "/home/dafoor/.local/share/nvim/site/pack/packer/start/vim-airline-themes",
-    url = "https://github.com/vim-airline/vim-airline-themes"
-  },
   ["vim-fugitive"] = {
     loaded = true,
     path = "/home/dafoor/.local/share/nvim/site/pack/packer/start/vim-fugitive",

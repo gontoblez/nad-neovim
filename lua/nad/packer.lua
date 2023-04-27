@@ -52,8 +52,6 @@ return require("packer").startup(function(use)
 	use("vim-scripts/gruvbox") -- gruvbox colorscheme
 	use("luisiacc/gruvbox-baby") -- supposedly better gruvbox
 	use("ThePrimeagen/harpoon") -- harpoon
-	use("vim-airline/vim-airline")
-	use("vim-airline/vim-airline-themes")
 	--treesitter
 	use("nvim-treesitter/nvim-treesitter", { run = ":TSUpdate" })
 	-- auotpairs
