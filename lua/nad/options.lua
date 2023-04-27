@@ -37,5 +37,5 @@ vim.opt.scrolloff = 15              -- keeps stuff centered
 vim.opt.signcolumn = "yes"          -- sign column
 vim.opt.fileencoding = "utf-8"      -- you use vim. you know html
 vim.opt.culopt = "both"             -- better highlighting
-vim.opt.guicursor = ""              -- classic cursor
+-- vim.opt.guicursor = ""              -- classic cursor
 vim.opt.mouse = ""                  -- why mouse?
