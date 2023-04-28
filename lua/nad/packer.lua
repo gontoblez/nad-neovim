@@ -51,6 +51,8 @@ return require("packer").startup(function(use)
 	})
 	use("vim-scripts/gruvbox") -- gruvbox colorscheme
 	use("luisiacc/gruvbox-baby") -- supposedly better gruvbox
+    -- status line (lualine)
+    use("nvim-lualine/lualine.nvim")
 	use("ThePrimeagen/harpoon") -- harpoon
 	--treesitter
 	use("nvim-treesitter/nvim-treesitter", { run = ":TSUpdate" })
