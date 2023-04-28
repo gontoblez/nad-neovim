@@ -9,6 +9,7 @@ vim.cmd [[set fileencoding=utf-8]]
 -- vim.cmd.colorscheme("gruvbox")      -- gruvbox colorscheme
 
 -- vim.opt = vim option
+vim.opt.showmode = false            -- no need for --INSERT--
 vim.opt.number = true               -- numbered lines
 vim.opt.relativenumber = true       -- relatively numbered lines
 vim.opt.cursorline = true           -- highlight the line where the cursor is
