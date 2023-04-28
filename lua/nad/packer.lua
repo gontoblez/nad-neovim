@@ -51,8 +51,8 @@ return require("packer").startup(function(use)
 	})
 	use("vim-scripts/gruvbox") -- gruvbox colorscheme
 	use("luisiacc/gruvbox-baby") -- supposedly better gruvbox
-    -- status line (lualine)
-    use("nvim-lualine/lualine.nvim")
+	-- status line (lualine)
+	use("nvim-lualine/lualine.nvim")
 	use("ThePrimeagen/harpoon") -- harpoon
 	--treesitter
 	use("nvim-treesitter/nvim-treesitter", { run = ":TSUpdate" })
@@ -73,9 +73,11 @@ return require("packer").startup(function(use)
 	-- markdown preview
 	use({
 		"iamcco/markdown-preview.nvim",
-		run = function()
-			vim.fn["mkdp#util#install"]()
+		run = "cd app && npm install",
+		setup = function()
+			vim.g.mkdp_filetypes = { "markdown" }
 		end,
+		ft = { "markdown" },
 	})
 	use("mbbill/undotree")
 	use("tpope/vim-fugitive")
