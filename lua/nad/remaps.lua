@@ -50,7 +50,7 @@ vim.keymap.set("n", "Q", "<nop>")
 
 -- replace the word you're on in all it's appearances in the buffer you're in
 -- <C-r><C-w> is a shortcut that 'prints' the word your cursor is on in command mode
-vim.keymap.set("n", "<leader>s", ":%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left><Left>")
+vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
 -- chmod +x from within vim
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
