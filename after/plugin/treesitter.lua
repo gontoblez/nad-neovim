@@ -13,6 +13,7 @@ treesitter.setup {
         "html",
         "css",
         "javascript",
+        "nix",
         "bash",
         "lua",
         "vim",
