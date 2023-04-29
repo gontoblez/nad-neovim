@@ -49,6 +49,7 @@ return require("packer").startup(function(use)
 		-- or                            , branch = '0.1.x',
 		requires = { { "nvim-lua/plenary.nvim" } },
 	})
+    use("akinsho/toggleterm.nvim")
 	use("vim-scripts/gruvbox") -- gruvbox colorscheme
 	use("luisiacc/gruvbox-baby") -- supposedly better gruvbox
 	-- status line (lualine)
