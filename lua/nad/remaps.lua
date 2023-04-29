@@ -32,6 +32,10 @@ vim.keymap.set("x", "<leader>p", "\"_dP")               -- paste over & don't ya
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
 
+-- better scrolling through empty lines
+vim.keymap.set("n", "{", "{zz")
+vim.keymap.set("n", "}", "}zz")
+
 -- keep cursor in the middle when pressing 'n' on searches
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
