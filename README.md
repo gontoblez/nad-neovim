@@ -36,8 +36,11 @@ installed. There's autocompletion support for various languages including:
 * Bash
 * Markdown
 
+It also provides spell-check for the English language.
+
 If you'd like support for more languages you can install their servers using
-the `:Mason` command after setting up this `config`
+the `:Mason` command after setting up this `config`. [Null-ls] helps formatting, but
+you will have to have the formatter installed (e.g Prettier for JS)
 
 ### Git Integration
 This neovim `config` has [fugitive] and [gitsigns] plugins installed to provide
@@ -46,25 +49,55 @@ aesthetics to the buffer window in addition to git functionality. You can use
 and commit them.
 
 ### Syntax Highlighting
+There's nothing really here except that syntax highlighting is done by [treesitter].
 
 ### Latex Support
+You can build Latex files using the hotkey `<space>lb`. Latex support is
+provided by [vimtex]. It opens `zathura` by default to view the rendered PDF.
 
 ### Markdown Support
+You can preview markdown files in your browser by pressing the binding
+`<space>mp`. The `config` uses [markdown-preview] for this purpose.
 
 ### Harpoon
+Easily switch between buffers with [harpoon]. Check `after/plugin/harpoon.lua`
+for the full list of keybindings.
 
 ### Commenting
+You can comment by highlighting the lines you want to comment and then press `gc`
+to comment. In normal mode, to comment a line, press `gcc`.
 
 ### ToggleTerm
+You can easily use the terminal inside neovim with this `config`. Press the binding
+`<C-\>` in normal mode to launch [toggleterm]().
 
 ### Lua Line
+For aesthetic purposes, [lualine]() is installed. You can change its theme by
+editing `after/plugin/lualine.lua`. You can check for available [lualine]() themes
+[here]().
 
 ### File Management
 
 #### NVIM Tree
+Use `<space>e` to open [nvim-tree]() and browse your files there.
 
 #### Telescope
+You can use telescope by pressing the binding `<space>pf` to switch search
+and open files FAST. You can also use `<space>ps` to search for a specific string
+of text in the files of the directory you're currently in.
 
 ## Installation
+1. Backup your existing neovim `config`
+```
+   $ mv ~/.config/nvim ~/.config/nvim.bak
+```
+2. Clone this repository
+```
+   $ git clone https://github.com/gontoblez/
+```
+3. Rename the cloned directory and move it to `$HOME/.config/`
+```
+   $ mv $HOME/.config/nvim
+```
 
 ## Special Thanks
