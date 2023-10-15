@@ -16,6 +16,8 @@
       * [NVIM Tree](#nvim-tree)
       * [Telescope](#telescope)
 * [Installation](#installation)
+    * [Dependencies](#dependencies)
+    * [Install](#install)
 * [Special Thanks](#special-thanks)
 
 ## Introduction
@@ -87,6 +89,14 @@ and open files FAST. You can also use `<space>ps` to search for a specific strin
 of text in the files of the directory you're currently in.
 
 ## Installation
+### Dependencies
+```
+cargo
+npm
+   ```
+These dependencies are required by `Mason` to install appropriate LSP servers.
+
+### Install
 1. Backup your existing neovim `config`
 ```
    $ mv ~/.config/nvim ~/.config/nvim.bak
