@@ -14,7 +14,7 @@ vim.keymap.set("n", "<C-k>", "<C-w>k")
 vim.keymap.set("n", "<C-l>", "<C-w>l")
 
 -- INSERT MODE REMAPS
-vim.keymap.set("i", "jk", "<ESC>")                      -- Enter NORMAL mode with "jk"
+vim.keymap.set("i", "ii", "<ESC>")                      -- Enter NORMAL mode with "jk"
 
 -- VISUAL MODE REMAPS
 -- indent and stay in indent mode
